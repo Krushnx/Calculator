@@ -11,12 +11,13 @@ let buttonList = document.querySelectorAll("button");
     let temp = e.target.innerHTML;
 
 
-    if (temp=='') {
+    if (temp=='←') {
+      string = string.slice(0,-1);
       console.log("Hello");
       
       
     }
-    if (temp=='=') {
+    else if (temp=='=') {
       
       console.log(string);
       try {
@@ -50,4 +51,3 @@ let buttonList = document.querySelectorAll("button");
 
     })
   })
-
